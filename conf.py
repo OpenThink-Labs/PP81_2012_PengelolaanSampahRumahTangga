@@ -11,6 +11,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import sphinx_bootstrap_theme
 import sys, os
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -41,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Peraturan Pemerintah No 81 Tahun 2012 Tentang'
-copyright = u'2013, Pengelolaan sampah rumah tangga dan sampah sejenis sampah rumah tanggaWildan Maulana'
+copyright = u'2013, Pengelolaan Sampah Rumah Tangga dan Sampah Sejenis Sampah Rumah Tangga - Negeri Pelangi'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -91,12 +92,19 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+# Activate the theme.
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    'navbar_title': "Diskusi : PP 81 Tahun 2012",
+    'navbar_class': "navbar navbar",
+    'source_link_position': "nav",
+    #'bootswatch_theme': "cosmo",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -110,7 +118,7 @@ html_theme = 'default'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = 'negeripelangi.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -184,7 +192,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'PeraturanPemerintahNo81Tahun2012Tentang.tex', u'Peraturan Pemerintah No 81 Tahun 2012 Tentang Documentation',
-   u'Pengelolaan sampah rumah tangga dan sampah sejenis sampah rumah tanggaWildan Maulana', 'manual'),
+   u'Pengelolaan sampah rumah tangga dan sampah sejenis sampah rumah tangga - Negeri Pelangi', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -214,7 +222,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'peraturanpemerintahno81tahun2012tentang', u'Peraturan Pemerintah No 81 Tahun 2012 Tentang Documentation',
-     [u'Pengelolaan sampah rumah tangga dan sampah sejenis sampah rumah tanggaWildan Maulana'], 1)
+     [u'Pengelolaan sampah rumah tangga dan sampah sejenis sampah rumah tangga - Negeri Pelangi'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -228,7 +236,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'PeraturanPemerintahNo81Tahun2012Tentang', u'Peraturan Pemerintah No 81 Tahun 2012 Tentang Documentation',
-   u'Pengelolaan sampah rumah tangga dan sampah sejenis sampah rumah tanggaWildan Maulana', 'PeraturanPemerintahNo81Tahun2012Tentang', 'One line description of project.',
+   u'Pengelolaan sampah rumah tangga dan sampah sejenis sampah rumah tangga - Negeri Pelangi', 'PeraturanPemerintahNo81Tahun2012Tentang', 'One line description of project.',
    'Miscellaneous'),
 ]
 
