@@ -24,10 +24,13 @@ Daftar Isi:
    bab10.rst
    
 
-Indeks dan Tabel
-==================
+Pencarian dan Referensi
+========================
 
-* :ref:`genindex`
-* :ref:`modindex`
+.. toctree::
+   :maxdepth: 2
+  
+   referensi.rst
+   
 * :ref:`search`
 

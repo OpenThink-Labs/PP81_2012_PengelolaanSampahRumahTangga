@@ -1,9 +1,9 @@
 .. _pendahuluan:
 
 
-***************
+***************************************************************
 PERATURAN PEMERINTAH REPUBLIK INDONESIA  NOMOR 81 TAHUN 2012 
-***************
+***************************************************************
 
 TENTANG  PENGELOLAAN SAMPAH RUMAH TANGGA DAN SAMPAH SEJENIS SAMPAH  RUMAH TANGGA 
 
